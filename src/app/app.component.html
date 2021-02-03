@@ -1,0 +1,16 @@
+<style>
+  ul {
+  list-style-type: circle;
+}
+</style>
+<div class="container">
+  <app-header></app-header>
+<div>
+  <h1>{{ title }}</h1>
+  <h4>Product list</h4>
+  <ul>
+    <li *ngFor="let  products of products"> {{ products.name }} - {{ products.price }} </li>
+  </ul>
+</div>
+<app-footer></app-footer>
+</div>
